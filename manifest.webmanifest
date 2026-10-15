@@ -1,0 +1,25 @@
+{
+  "name": "GymControl",
+  "short_name": "GymControl",
+  "description": "Gestión simple para tu gimnasio: socios, entradas, vencimientos y caja.",
+  "id": "./",
+  "start_url": "./#/inicio",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#04120D",
+  "theme_color": "#04120D",
+  "lang": "es",
+  "categories": ["business", "health", "fitness"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Registrar entrada", "url": "./#/entradas", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Socios", "url": "./#/socios", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Caja", "url": "./#/caja", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

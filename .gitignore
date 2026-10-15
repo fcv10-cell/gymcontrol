@@ -1,0 +1,5 @@
+# Solo para abrir la app en este PC; no se publican.
+server.js
+*.bat
+*.vbs
+icons/gymcontrol.ico

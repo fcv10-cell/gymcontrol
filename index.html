@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>GymControl</title>
+  <meta name="description" content="Gestión simple para tu gimnasio: socios, entradas, vencimientos y caja.">
+  <meta name="theme-color" content="#04120D">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" defer></script>
+  <script src="js/config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i><i class="grain"></i></div>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="logo" href="#/inicio">
+        <img src="icons/icon.svg" alt="" width="40" height="40">
+        <span><strong>GymControl</strong><small id="sbGym">Mi Gym</small></span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Secciones"></nav>
+      <div class="sb-foot" id="sbFoot"></div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div class="titles"><p class="eyebrow" id="pageEyebrow"></p><h1 id="pageTitle">GymControl</h1></div>
+        <div class="top-actions">
+          <button class="sync" id="syncPill" type="button"></button>
+          <button class="cmdk" id="cmdBtn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <span>Registrar entrada</span><kbd>Ctrl K</kbd>
+          </button>
+        </div>
+      </header>
+      <main id="view" class="view"></main>
+    </div>
+  </div>
+
+  <nav class="bottomnav" id="bnav" aria-label="Secciones"></nav>
+  <div id="layer"></div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>
